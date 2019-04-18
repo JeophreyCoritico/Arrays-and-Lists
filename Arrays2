@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ArraysEx1
+{
+    class Class1
+    {
+        static void Main(string[] args)
+        {
+            int[] numbers = { 34, 5, 67, 1, 99, 34, 44, 78, 34, 0 };
+
+            foreach (int i in numbers)
+                Console.Write(i + " ");
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Array.Sort(numbers);
+            foreach (int i in numbers)
+                Console.Write(i + " ");
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            int ii = 0;
+            int total = 0;
+            
+            while (ii < numbers.Length)
+            {;
+                total = total + numbers[ii];
+                ii++;
+            }
+
+            Console.Write("Total is: " + total);
+
+            Console.ReadLine();
+        }
+    }
+}
