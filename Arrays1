@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ArraysLists
+{
+    class ArraysEx1
+    {
+        static void Main(string[] args)
+        {
+            string[] names = new string[5];
+
+            names[0] = "Jeophrey";
+            names[1] = "Jeffrey";
+            names[2] = "Geoffrey";
+            names[3] = "Geoffery";
+            names[4] = "Jeffery";
+
+            for (int i = 0; i < names.Length; i++)
+                Console.WriteLine("Hello " + names[i]);
+
+            Console.ReadLine();
+        }
+    }
+}
