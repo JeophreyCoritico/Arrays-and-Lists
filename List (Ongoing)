@@ -1,0 +1,81 @@
+using System;
+using System.Collections.Generic;
+
+namespace Lists1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //PRACTICE
+
+            //List < int > iList = new List < int > ();
+            //iList.Add(2);
+            //iList.Add(3);
+            //iList.Add(5);
+            //iList.Add(7);
+
+            //List<string> colors = new List<string>();
+            //colors.Add("Red");
+            //colors.Add("Blue");
+            //colors.Add("Green");
+
+            //foreach (string color in colors)
+            //{
+            //    Console.Write(color + " ");
+            //}
+
+
+            //string input = Console.ReadLine();
+
+            //int UserInput = int.Parse(input);
+
+            //string[] UserInputs = new string[5];
+            //UserI[1] = UserInput;
+
+
+            //List<int> numbers = new List<int>();
+            //numbers.Add(UserInput);
+
+            Console.WriteLine("Enter Input_1");
+            string input = Console.ReadLine();
+            int number = int.Parse(input);
+            Console.Clear();
+
+            Console.WriteLine("Enter Input_2");
+            string input2 = Console.ReadLine();
+            int number2 = int.Parse(input);
+            Console.Clear();
+
+            Console.WriteLine("Enter Input_3");
+            string input3 = Console.ReadLine();
+            int number3 = int.Parse(input);
+            Console.Clear();
+
+            Console.WriteLine("Enter Input_4");
+            string input4 = Console.ReadLine();
+            int number4 = int.Parse(input);
+            Console.Clear();
+
+            Console.WriteLine("Enter Input_5");
+            string input5 = Console.ReadLine();
+            int number5 = int.Parse(input);
+            Console.Clear();
+
+            var list = new List<int>(5);
+            list.Add(number);
+            list.Add(number2);
+            list.Add(number3);
+            list.Add(number4);
+            list.Add(number5);
+
+            foreach (int i in list)
+            {
+                Console.WriteLine(i + " ");
+            }
+
+
+            Console.ReadLine();
+        }
+    }
+}
